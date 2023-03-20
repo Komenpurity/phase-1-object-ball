@@ -132,9 +132,41 @@ gameObject();
 console.log(gameObject());
 
 
-
+//return name of the home team 
 function homeTeamName(){
     let object = gameObject();
     return object["home"]["teamName"];
+    // return gameObject()["home"]["teamName"];
 }
 console.log(homeTeamName());
+
+
+
+//points scored by a player
+function numPointsScored(name){
+   // return gameObject()[teamName]["players"][name]["points"];
+}
+console.log(numPointsScored("Brendan Haywood"));
+
+
+
+//returns shoe size of a player
+function shoeSize(name){
+
+}
+console.log(shoeSize());
+
+
+//returns team colors
+function teamColors(teamName){
+    let object = gameObject();
+    if(teamName === object["home"]["teamName"]){
+        return object["home"]["colors"];
+    } else {
+        return object["away"]["colors"];
+    }
+}
+console.log(teamColors("Charlotte Hornets"));
+
+
+
