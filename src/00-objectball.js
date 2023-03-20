@@ -170,3 +170,12 @@ console.log(teamColors("Charlotte Hornets"));
 
 
 
+//return team names
+function teamNames(place){
+    if(place === gameObject()["home"]){
+        return gameObject()["home"]["teamNames"];
+    } else {
+        return gameObject()["away"]["teamNames"];
+    }
+}
+console.log(teamNames("home"));
