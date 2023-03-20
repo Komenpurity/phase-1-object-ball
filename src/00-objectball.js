@@ -131,3 +131,10 @@ function gameObject(){
 gameObject();
 console.log(gameObject());
 
+
+
+function homeTeamName(){
+    let object = gameObject();
+    return object["home"]["teamName"];
+}
+console.log(homeTeamName());
